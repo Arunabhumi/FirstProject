@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GSATest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GsaTest(failed)">
+    <parameter name="ticker" value="AAPL"/>
+    <parameter name="nsnGroupID" value="35"/>
+    <parameter name="singleNsnGroupID" value="3"/>
+    <parameter name="expectedTickerPrice" value="130"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://fss-ui-dev.fss19-dev.fcs.gsa.gov/nsn"/>
+    <classes>
+      <class name="gsa.GsaTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="searchNSNCLass" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- gsa.GsaTest -->
+    </classes>
+  </test> <!-- GsaTest(failed) -->
+</suite> <!-- Failed suite [GSATest] -->

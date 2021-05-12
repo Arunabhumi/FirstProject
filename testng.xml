@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="GSATest">
+   <test name="GsaTest">
+   	  <parameter name="url" value="https://fss-ui-dev.fss19-dev.fcs.gsa.gov/nsn" />
+   	  <parameter name="browser" value="chrome" />
+   	  <parameter name="ticker" value="AAPL" />
+   	  <parameter name="expectedTickerPrice" value="130" />
+   	  <parameter name="nsnGroupID" value="35" />
+   	  <parameter name="singleNsnGroupID" value="3" />
+      <classes>
+         <class name = "gsa.GsaTest">
+	         <methods>
+	         	<include name="launchURl"/>
+	         	<include name="singleSearchNSNCLass"/>
+	         	<include name="searchNSNCLass"/>         	         	
+	         	<exclude name="validateGroupRouting" />
+	         	<exclude name="validateTickerPrice"/>
+	         </methods>
+         </class>
+      </classes>
+   </test>
+</suite>

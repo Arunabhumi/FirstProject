@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <parameter name="ticker" value="param-val-not-found"/>
+  <parameter name="nsnGroupID" value="param-val-not-found"/>
+  <parameter name="singleNsnGroupID" value="param-val-not-found"/>
+  <parameter name="expectedTickerPrice" value="param-val-not-found"/>
+  <parameter name="browser" value="param-val-not-found"/>
+  <parameter name="url" value="param-val-not-found"/>
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="gsa.GsaTest">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="singleSearchNSNCLass" invocation-numbers="0"/>
+          <include name="validateGroupRouting"/>
+          <include name="searchNSNCLass" invocation-numbers="0"/>
+          <include name="afterSuite"/>
+          <include name="beforeClass"/>
+          <include name="searchForTicker" invocation-numbers="0"/>
+          <include name="launchURl" invocation-numbers="0"/>
+          <include name="validateTickerPrice" invocation-numbers="0"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- gsa.GsaTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
